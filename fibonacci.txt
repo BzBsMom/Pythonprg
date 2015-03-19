@@ -1,0 +1,1 @@
+def sum_list_last2(limit):  #start with [0,1] iterates until limit and append    list1=[0,1]    for i in range(limit + 1):        list1.append( list1[i] + list1[i+1])        print list1[i],list1[i+1]    return list1[limit+1]print sum_list_last2(40)

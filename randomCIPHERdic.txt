@@ -1,0 +1,1 @@
+import randomimport simpleguiCIPHER={}message=[]LETTERS="abcdefghijklmnopqrstuvwxyz"def init():    letter_list = list(LETTERS)    random.shuffle(letter_list)    for ch in LETTERS:        CIPHER[ch] = letter_list.pop()init()print CIPHER.items

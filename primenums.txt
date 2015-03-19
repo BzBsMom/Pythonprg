@@ -1,0 +1,1 @@
+n = 1000numbers = range (2,n)results = []while len(numbers) > 0:    results.append(numbers.pop(0))    i = 0    len_numbers = len(numbers)    while i < len_numbers and len_numbers > 0:        if numbers[i] % results[-1] == 0:            numbers.pop(i)            len_numbers -=1            i-=1        i+=1print len(results)
